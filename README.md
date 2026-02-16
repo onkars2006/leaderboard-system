@@ -51,7 +51,23 @@ This project supports **Event Management**, **Participant Management**, and **Re
 - **Hosting:** Vercel / Netlify (recommended)
 
 ---
+## 🧠 Future Improvements
 
+- 🔐 **Admin Login Authentication (Supabase Auth)**  
+  Add secure admin login system using Supabase Authentication.
+
+- 🛡️ **Role-Based Access Control (RBAC)**  
+  Restrict CRUD operations so only admins can create events, manage participants, and update scores.
+
+- 📊 **CSV Export Leaderboard**  
+  Allow exporting leaderboard data into CSV format for reporting and offline use.
+
+- 🔍 **Search & Pagination**  
+  Implement search for participants/events and pagination for handling large datasets efficiently.
+
+- 🏅 **Certificate Generator for Winners**  
+  Auto-generate certificates (PDF) for top-ranked participants with event name and rank.
+---
 ## 📂 Project Structure
 
 ```bash
