@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Leaderboard from "./pages/Leaderboard";
+import Events from "./pages/Events";
+import Participants from "./pages/Participants";
+import "./App.css";
 
-function App() {
+export default function App() {
+  const [page, setPage] = useState("leaderboard");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className="navbar">
+        <div className="logo">
+          <span className="logo-icon">🏆</span> Leaderboard Management
+        </div>
+
+        <div className="nav-buttons">
+          <button
+            className={page === "leaderboard" ? "nav-btn active" : "nav-btn"}
+            onClick={() => setPage("leaderboard")}
+          >
+            Leaderboard
+          </button>
+
+          <button
+            className={page === "events" ? "nav-btn active" : "nav-btn"}
+            onClick={() => setPage("events")}
+          >
+            Events
+          </button>
+
+          <button
+            className={page === "participants" ? "nav-btn active" : "nav-btn"}
+            onClick={() => setPage("participants")}
+          >
+            Participants
+          </button>
+        </div>
+      </div>
+
+      <div className="container">
+        {page === "leaderboard" && <Leaderboard />}
+        {page === "events" && <Events />}
+        {page === "participants" && <Participants />}
+      </div>
     </div>
   );
 }
-
-export default App;

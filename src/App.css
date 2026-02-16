@@ -1,38 +1,218 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f8ff;
+  color: #111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #003cff, #007bff);
+  padding: 18px 28px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  font-size: 22px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.nav-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn.active {
+  background: white;
+  color: #003cff;
+}
+
+.container {
+  padding: 25px;
+}
+
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.title {
+  margin: 0;
+  color: #003cff;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.subtitle {
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.input-box {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #c7d7ff;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+  background: #fbfcff;
+  transition: 0.2s;
+}
+
+.input-box:focus {
+  border: 1px solid #003cff;
+  box-shadow: 0px 0px 8px rgba(0, 60, 255, 0.2);
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background: #003cff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-primary:hover {
+  background: #0028b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn-danger {
+  background: #ff2e2e;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #cc0000;
+}
+
+.btn-secondary {
+  background: #0077ff;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #005bd1;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 18px;
+  border-radius: 14px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+.table th {
+  background: #003cff;
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table td {
+  padding: 14px;
+  border-bottom: 1px solid #e4ecff;
+  font-size: 14px;
+}
+
+.table tr:hover {
+  background: #f2f6ff;
+}
+
+.action-row {
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 800;
+  font-size: 12px;
+  display: inline-block;
+}
+
+.badge-blue {
+  background: rgba(0, 60, 255, 0.12);
+  color: #003cff;
+}
+
+.badge-green {
+  background: rgba(0, 200, 80, 0.15);
+  color: #008a36;
+}
+
+@media (max-width: 768px) {
+  .input-box {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .table {
+    min-width: 600px;
   }
 }
