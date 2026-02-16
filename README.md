@@ -8,6 +8,8 @@ This project supports **Event Management**, **Participant Management**, and **Re
 
 🔗 Live Project URL: https://leaderboard-system-kappa.vercel.app/
 ---
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/8626103b-993b-4c5b-acba-2647fc822c74" />
+
 ## 🚀 Features
 
 ### ✅ Leaderboard System
