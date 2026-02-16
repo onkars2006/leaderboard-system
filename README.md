@@ -4,7 +4,10 @@ A modern **Leaderboard Management System** built using **React.js** and **Supaba
 This project supports **Event Management**, **Participant Management**, and **Real-time Leaderboard Ranking** with a clean premium UI.
 
 ---
+## 🌐 Live Demo
 
+🔗 Live Project URL: https://leaderboard-system-kappa.vercel.app/
+---
 ## 🚀 Features
 
 ### ✅ Leaderboard System
@@ -36,6 +39,7 @@ This project supports **Event Management**, **Participant Management**, and **Re
 
 
 ---
+
 
 ## 🛠 Tech Stack
 
